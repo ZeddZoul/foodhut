@@ -1,0 +1,20 @@
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 5px;
+  ul {
+    display: flex;
+    gap: 10px;
+    a {
+      color: black;
+      line-height: 35px;
+      transition: scale 0.25s linear, transform 0.25s linear;
+      &:hover {
+        color: #f37c02;
+        scale: 1.1;
+        transform: translate(-2px, -3px);
+      }
+    }
+  }
+}

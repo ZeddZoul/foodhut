@@ -1,0 +1,42 @@
+@import "./typography.scss";
+
+.Container {
+  padding-inline: 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .Home {
+    display: flex;
+    justify-content: space-between;
+    .Hero_Text {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      margin-block: 20px;
+      p{
+        color: #373434;
+        margin-bottom: 20px;
+      }
+      h1 {
+        font-size: 35px;
+        text-transform: capitalize;
+      }
+      span {
+        font-size: 90px;
+        text-shadow: #f37c02 0px 0px 3px;
+      }
+    }
+    a {
+      display: inline-block;
+      padding: 16px 32px;
+      background: #f37c02;
+      color: white;
+      font-weight: 500;
+      width: max-content;
+    }
+    img {
+      width: 45vw;
+      height: auto;
+    }
+  }
+}

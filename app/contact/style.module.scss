@@ -1,0 +1,44 @@
+@import "../typography.scss";
+.Container {
+  padding-inline: 10%;
+  .FormWrapper {
+    padding-top: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    form {
+      width: 35vw;
+    }
+    img {
+      width: 30vw;
+      height: auto;
+      max-width: 360px;
+    }
+  }
+  .Newsletter {
+   ul{
+    margin-block: 20px;
+   }
+    margin-block: 20px;
+    input {
+      background-color: transparent;
+      color: black;
+      border: 1px solid #f37c02;
+      margin-block: 15px;
+      height: 40px;
+      width: 30%;
+      padding: 3px;
+    }
+    button {
+      background-color: #f37c02;
+      color: white;
+      font-weight: 500;
+      font-size: 14px;
+      display: block;
+      width: max-content;
+      border:none;
+      padding: 12px 24px;
+    }
+  }
+}

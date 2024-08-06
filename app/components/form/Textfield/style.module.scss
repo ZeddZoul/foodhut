@@ -1,0 +1,33 @@
+.Wrapper {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  height: 35px;
+  width: 100%;
+  input {
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    color: #f2f2f2;
+  }
+  label {
+    text-transform: capitalize;
+    transition: top 0.15s linear, font-size 0.15s linear, top 0.15s linear,
+      left 0.15s linear;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    color: #f2f2f2;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .Focused {
+    top: -10px;
+    font-size: 12px;
+    left: -3px;
+  }
+}

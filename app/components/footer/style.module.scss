@@ -1,0 +1,43 @@
+.Footer {
+  background-color: #000;
+  color: #fff;
+  padding: 3% 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+
+  span {
+    background-color: white;
+    width: 2px;
+    display: block;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    h1 {
+      margin-block-end: 10px;
+    }
+  }
+}
+.center {
+  background-color: #000;
+  color: #fff;
+  font-weight: 200;
+  padding-bottom: 15px;
+}
+.Socials {
+  margin-top: 5px;
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  svg {
+    height: 30px;
+    width: auto;
+    color: white;
+    transition: color 0.1s linear;
+    &:hover {
+      color: #f37c02;
+    }
+  }
+}
