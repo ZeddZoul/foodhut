@@ -35,9 +35,9 @@ const About = () => {
               every dish they create.
             </p>
             <p>
-              At Food Hut, we're not just about delivering meals; we're about
+              At Food Hut, we are not just about delivering meals; we are about
               delivering experiences. We believe that food has the power to
-              connect people, spark joy, and create lasting memories. That's why
+              connect people, spark joy, and create lasting memories. That is why
               we go above and beyond to ensure that every aspect of your Food
               Hut experience is exceptional, from the moment you browse our menu
               to the last bite of your delicious meal.
