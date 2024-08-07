@@ -20,7 +20,7 @@ const Home = () => {
               Indulge in the ultimate food experience at Foodhut where hunger meets happiness. Bite through a tantalizing menu of burgers, refreshing drinks, and more. Come satisfy your cravings and leave with a smile. Order now for quick and easy delivery!</p>
             <Link href="/login">Order a meal &rarr;</Link>
           </div>
-          <Image src={hero} />
+          <Image src={hero} alt="" />
 
         </div>
       </div>

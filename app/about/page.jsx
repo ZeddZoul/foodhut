@@ -13,7 +13,7 @@ const About = () => {
         <Navbar />
         <h1 className={s.Monoton}>How we started</h1>
         <div className={s.Page1}>
-          <Image src={image} />
+          <Image src={image} alt="" />
           <div>
             <p>
               Food Hut,originally founded by Group 6 Food and Beverages co, a
@@ -47,15 +47,15 @@ const About = () => {
         <h1 className={s.Monoton}>Why us</h1>
         <div className={s.Page2}>
           <div className={s.card}>
-            <Image src={image1} />
+            <Image src={image1} alt="" />
             <p>skilled and professional chefs with our 18/5 availability</p>
           </div>
           <div className={s.card}>
-            <Image src={image2} />
+            <Image src={image2} alt="" />
             <p>Hand curated recipies that do not break the bank</p>
           </div>
           <div className={s.card}>
-            <Image src={image3} />
+            <Image src={image3} alt="" />
             <p>
               {" "}
               Effectiveness in our dishes and beverages as we do not believe in

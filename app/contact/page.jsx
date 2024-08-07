@@ -18,7 +18,7 @@ const ContactUs = () => {
           <h1 className={s.Monoton}>Contact us</h1>
         </center>
         <div className={s.FormWrapper}>
-          <Image src={image} />
+          <Image src={image} alt="" />
           <Form formType={"contact"} />
         </div>
         <div className={s.Newsletter}>

@@ -4,7 +4,7 @@ import Image from "next/image"
 const Navbar = () => {
   return (
     <div className={s.Navbar} >
-    <Link href={"/"}>  <Image alt="Logo" width={140} height={70} src={"/logo.png"} /></Link>
+    <Link href={"/"}>  <Image alt="Logo" width={140} height={70} src={"/logo.png"}  /></Link>
       
       <ul className={s.Navlinks}>
         <Link href="/">Home</Link>
