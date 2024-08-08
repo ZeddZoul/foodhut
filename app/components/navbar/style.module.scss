@@ -3,9 +3,29 @@
   justify-content: space-between;
   align-items: center;
   padding-block: 5px;
+  > div {
+    z-index: -1;
+    opacity: 0;
+    @media (max-width: 900px) {
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      &.visible {
+        background-color: #6e6d6d70;
+        z-index: 1;
+        opacity: 1;
+      }
+    }
+  }
+
   ul {
     display: flex;
     gap: 10px;
+    @media (max-width: 900px) {
+      display: none;
+    }
     a {
       color: black;
       line-height: 35px;
@@ -14,6 +34,91 @@
         color: #f37c02;
         scale: 1.1;
         transform: translate(-2px, -3px);
+      }
+    }
+  }
+  svg {
+    @media (min-width: 900px) {
+      display: none;
+    }
+  }
+  .Hamburger {
+    display: none;
+    color: #000;
+    height: 25px;
+    width: auto;
+    cursor: pointer;
+
+    &:hover {
+      color: #f37c02;
+      animation: shiver 0.25s infinite linear;
+      @keyframes shiver {
+        0% {
+          rotate: 10deg;
+        }
+        25% {
+          rotate: -10deg;
+        }
+        50% {
+          rotate: 10deg;
+        }
+        75% {
+          rotate: -10deg;
+        }
+        100% {
+          rotate: 0deg;
+        }
+      }
+    }
+    @media (max-width: 900px) {
+      &.Hamburger {
+        display: block;
+      }
+    }
+  }
+  .Navlinks_mobile {
+    &.visible {
+      display: flex;
+    }
+    @media (max-width: 900px) {
+      svg {
+        color: white;
+        height: 35px;
+        width: auto;
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        &:hover {
+          animation: spin 0.25s linear;
+        }
+        @keyframes spin {
+          from {
+            rotate: 90deg;
+          }
+          to {
+            rotate: 0deg;
+          }
+        }
+      }
+      z-index: 1;
+      padding: 50px 25px;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      flex-direction: column;
+      background-color: #f37c02;
+      width: 45vw;
+      height: 100vh;
+      a {
+        color: white;
+        padding: 8px 16px;
+        width: 100%;
+        &:hover {
+          background-color: #dad8d842;
+          color: white;
+          scale: 1;
+        }
       }
     }
   }

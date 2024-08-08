@@ -1,17 +1,32 @@
 @import "../typography.scss";
 .Container {
   padding-inline: 10%;
-  h1{
+  
+  @media (max-width:950px) {
+    padding-inline: 2%;
+  }
+  h1 {
     margin-block: 20px;
     text-align: center;
-   }
+    @media (max-width:950px) {
+      font-size: 30px;
+    }
+  }
 }
 .Page {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
+  @media (max-width:950px) {
+    justify-content: center;
+    min-width: 360px;
+  }
   .FormWrapper {
     width: 45vw;
+    @media (max-width:950px) {
+      width: 65vw;
+    }
   }
   gap: 20px;
   p {
@@ -20,7 +35,7 @@
     a {
       color: #592f05;
       font-size: 14px;
-      &:hover{
+      &:hover {
         color: #f37c02;
       }
     }
@@ -28,6 +43,9 @@
   img {
     width: 45vw;
     height: auto;
+    @media (max-width:950px) {
+      display: none;
+    }
+ 
   }
-
 }

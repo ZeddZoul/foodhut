@@ -1,0 +1,25 @@
+@import "../../typography";
+.MenuItem{
+  display: flex;
+  flex-direction: column;
+  object-fit: contain;
+  gap: 10px;
+  width: max-content;
+  overflow: hidden;
+  img{
+    max-width: 250px;
+    max-height: 350px;
+    object-fit: contain;
+
+  }
+  h4{
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  small{
+    font-size: 12px;
+    opacity: .7;
+  }
+  
+}
