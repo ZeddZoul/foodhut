@@ -7,13 +7,29 @@
     gap: 20px;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 1100px) {
+      // flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
     form {
       width: 35vw;
+      @media (max-width: 900px) {
+        width: 50vw;
+       
+      }
+      @media (max-width: 900px) {
+        width: 80vw;
+       max-width: 600px;
+      }
     }
     img {
       width: 30vw;
       height: auto;
       max-width: 360px;
+      @media (max-width: 900px) {
+        display:none
+      }
     }
   }
   .Newsletter {
@@ -29,6 +45,9 @@
       height: 40px;
       width: 30%;
       padding: 3px;
+      @media (max-width: 900px) {
+        width: 80%;
+      }
     }
     button {
       background-color: #f37c02;

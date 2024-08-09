@@ -1,7 +1,6 @@
 import s from "./style.module.scss";
 import Textfield from "./Textfield";
 const Form = ({ formType }) => {
-  console.log(formType);
   const SignupForm = (
     <form className={s.SignupForm}>
       <Textfield

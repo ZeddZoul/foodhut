@@ -4,6 +4,8 @@
   flex-direction: column;
   gap: 40px;
   padding:25% 10%;
+  margin-bottom: 15px;
+
   button {
     color: #f37c02;
     background-color: white;
@@ -22,6 +24,7 @@
   flex-direction: column;
   gap: 40px;
   padding:7%;
+  margin-bottom: 15px;
   button {
     color: #f37c02;
     background-color: white;
@@ -34,6 +37,8 @@
 }
 .SignupForm {
   background-color: #f37c02;
+  margin-bottom: 15px;
+
   display: flex;
   flex-direction: column;
   gap: 40px;

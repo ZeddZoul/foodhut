@@ -4,11 +4,6 @@ import Form from "../components/form";
 import image from "../../public/contact.png";
 import Image from "next/image";
 import Footer from "../components/footer";
-import { FaFacebook } from "react-icons/fa";
-import { AiFillInstagram } from "react-icons/ai";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaLinkedin } from "react-icons/fa";
-import Link from "next/link";
 const ContactUs = () => {
   return (
     <>
