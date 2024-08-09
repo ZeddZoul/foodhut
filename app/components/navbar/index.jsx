@@ -7,33 +7,36 @@ import { useState } from "react";
 import { IoCloseOutline } from "react-icons/io5";
 const Navbar = () => {
   const [mobile, setMobile] = useState(false);
+  const closeTab = (e) => {
+    e.target === e.currentTarget && setMobile(false);
+  };
   return (
     <div className={s.Navbar}>
       <Link href={"/"}>
         {" "}
         <Image alt="Logo" width={140} height={70} src={"/logo.png"} />
       </Link>
-      <FaHamburger
-        onClick={() => setMobile(true)}
-        className={s.Hamburger}
-      />
-      <div className={    mobile ? `${s.menuContainer} ${s.visible}` : `${
-            s.menuContainer
-          }`}>
-      <ul
+      <FaHamburger onClick={() => setMobile(true)} className={s.Hamburger} />
+      <div
+        onClick={(e) => closeTab(e)}
         className={
-          mobile ? `${s.Navlinks_mobile} ${s.visible}` : `${
-            s.Navlinks_mobile
-          }`
+          mobile ? `${s.menuContainer} ${s.visible}` : `${s.menuContainer}`
         }
       >
-        <IoCloseOutline  onClick={() => setMobile(false)} />
-        <Link href="/">Home</Link>
-        <Link href="/about">About us</Link>
-        <Link href="/contact">Contact us</Link>
-        <Link href="/login">Order a meal</Link>
-      </ul>
-    </div>
+        <ul
+          className={
+            mobile
+              ? `${s.Navlinks_mobile} ${s.visible}`
+              : `${s.Navlinks_mobile}`
+          }
+        >
+          <IoCloseOutline onClick={() => setMobile(false)} />
+          <Link href="/">Home</Link>
+          <Link href="/about">About us</Link>
+          <Link href="/contact">Contact us</Link>
+          <Link href="/login">Order a meal</Link>
+        </ul>
+      </div>
     </div>
   );
 };

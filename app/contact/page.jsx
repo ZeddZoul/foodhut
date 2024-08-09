@@ -5,6 +5,7 @@ import image from "../../public/contact.png";
 import Image from "next/image";
 import Footer from "../components/footer";
 const ContactUs = () => {
+  
   return (
     <>
       <div className={s.Container}>
@@ -16,7 +17,7 @@ const ContactUs = () => {
           <Image src={image} alt="" />
           <Form formType={"contact"} />
         </div>
-        <div className={s.Newsletter}>
+        <div onClick={e => closeTab()} className={s.Newsletter}>
           <p>Join the FoodHut family and be the first to know about:</p>
           <ul>
             <li>🔥 Hot new restaurants in your area</li>
