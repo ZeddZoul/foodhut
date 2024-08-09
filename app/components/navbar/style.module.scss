@@ -107,12 +107,13 @@
       top: 0px;
       flex-direction: column;
       background-color: #f37c02;
-      width: 45vw;
+      width: 55vw;
       height: 100vh;
       a {
         color: white;
         padding: 8px 16px;
         width: 100%;
+        font-size: 14px;
         &:hover {
           background-color: #dad8d842;
           color: white;

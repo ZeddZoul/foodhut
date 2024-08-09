@@ -1,6 +1,9 @@
 @import "../typography.scss";
 .Container {
   padding-inline: 10%;
+  @media (max-width:950px) {
+    padding-inline: 2%;
+  }
   h1{
     margin-block: 20px;
     text-align: center;
@@ -15,6 +18,9 @@
   align-items: center;
     @media (max-width:950px) {
     justify-content: center;
+    gap: 0;
+    flex-direction: column;
+
     min-width: 360px;
   }
   .FormWrapper {
