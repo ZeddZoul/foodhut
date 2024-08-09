@@ -17,7 +17,7 @@ const ContactUs = () => {
           <Image src={image} alt="" />
           <Form formType={"contact"} />
         </div>
-        <div onClick={e => closeTab()} className={s.Newsletter}>
+        <div className={s.Newsletter}>
           <p>Join the FoodHut family and be the first to know about:</p>
           <ul>
             <li>🔥 Hot new restaurants in your area</li>
