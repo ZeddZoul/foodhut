@@ -4,8 +4,8 @@
   align-items: center;
   padding-block: 5px;
   > div {
-    z-index: -1;
     @media (max-width: 900px) {
+    z-index: -1;
       width: 100vw;
       height: 100vh;
       position: fixed;
